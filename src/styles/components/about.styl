@@ -1,0 +1,59 @@
+.about
+    margin-bottom 56px
+    padding 0 16px
+
+    &__inner
+        margin-bottom 56px
+        padding-top 27px
+
+    &__title
+        position relative
+        margin 0 0 32px
+        font-size 38px
+        line-height @font-size + 6px
+        letter-spacing -.54px
+        color color-blue
+
+        &::before
+            content ''
+            position absolute
+            top -25px
+            left 154px
+            display block
+            width 152px
+            height 19px
+            background-image url('../images/pattern-curved-line-1.svg')
+            background-repeat no-repeat
+            background-size cover
+
+    &__image
+        width 100%
+        height auto
+        margin-bottom 56px
+
+    &__stats
+        display flex
+        flex-wrap nowrap
+        flex-direction column
+        align-items center
+        margin 0
+        padding 0
+        list-style none
+
+    &__stats-item
+        margin-bottom 32px
+        line-height 1.62
+        letter-spacing 2.5px
+        text-transform uppercase
+        text-align center
+
+        &:last-of-type
+            margin-bottom 0
+
+    &__stats-number
+        display block
+        font-weight 700
+        font-size 48px
+        line-height @font-size + 8px
+        text-align center
+        color color-blue

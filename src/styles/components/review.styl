@@ -1,0 +1,57 @@
+.review
+    padding-top 181px
+    background-image linear-gradient(to bottom, color-white 0%, color-white 85%, color-beige 0)
+
+    &__container
+        position relative
+        padding 338px 16px 64px
+        color color-white
+        background-color color-blue
+        background-image url('../images/pattern-curved-line-2.svg')
+        background-repeat no-repeat
+        background-position center 261px
+        background-size 50px auto
+        border-radius 15px
+
+    &__image
+        position absolute
+        top -181px
+        left 50%
+        display block
+        transform translateX(-50%)
+
+    &__lead
+        margin 0 0 40px
+        font-size 40px
+        line-height @font-size + 8px
+        letter-spacing -.42px
+        text-align center
+
+    &__quote
+        margin 0
+
+    &__quote-text
+        margin 0 0 40px
+        font-size 18px
+        line-height @font-size + 14px
+        letter-spacing .09px
+        text-align center
+
+        &::before
+            content '“'
+
+        &::after
+            content '”'
+
+    &__quote-cite
+        display block
+        font-style normal
+        letter-spacing 2.5px
+        text-transform uppercase
+        text-align center
+
+    &__quote-name
+        display block
+        font-size 18px
+        line-height @font-size + 14px
+        letter-spacing -.18px
