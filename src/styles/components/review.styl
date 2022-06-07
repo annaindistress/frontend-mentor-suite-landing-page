@@ -7,10 +7,10 @@
         padding 338px 16px 64px
         color color-white
         background-color color-blue
-        background-image url('../images/pattern-curved-line-2.svg')
+        background-image url('../images/pattern-blur.svg'), url('../images/pattern-curved-line-2.svg')
         background-repeat no-repeat
-        background-position center 261px
-        background-size 50px auto
+        background-position center top, center 261px
+        background-size 250px, 50px auto
         border-radius 15px
 
     &__image
@@ -18,6 +18,8 @@
         top -181px
         left 50%
         display block
+        width 252px
+        height auto
         transform translateX(-50%)
 
     &__lead
@@ -55,3 +57,13 @@
         font-size 18px
         line-height @font-size + 14px
         letter-spacing -.18px
+
+@media (min-width: 768px)
+    .review
+        background-image linear-gradient(to bottom, color-white 0%, color-white 47%, color-beige 0)
+
+        &__container
+            padding-left 58px
+            padding-right 58px
+            background-position: center -110px, center 261px;
+            background-size: 400px, 50px auto;
