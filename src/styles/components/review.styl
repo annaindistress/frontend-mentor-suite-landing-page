@@ -65,5 +65,37 @@
         &__container
             padding-left 58px
             padding-right 58px
-            background-position: center -110px, center 261px;
-            background-size: 400px, 50px auto;
+            background-position center -110px, center 261px;
+            background-size 400px, 50px auto;
+
+@media (min-width: 1200px)
+    .review
+        padding-top 45px
+
+        &__container
+            padding 88px 125px
+            padding-left 634px
+            background-position 55px calc(100% + 80px),center 161px;
+            background-size 500px,64px auto;
+
+        &__image
+            top auto
+            bottom 0
+            left 122px
+            width auto
+            height 590px
+            transform translateX(0)
+
+        &__lead
+            font-size 48px
+            letter-spacing -.5px
+            text-align left
+
+        &__quote-text
+            font-size 20px
+            line-height @font-size + 15px
+            letter-spacing .1px
+            text-align left
+
+        &__quote-cite
+            text-align left
